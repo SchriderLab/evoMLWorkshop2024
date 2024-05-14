@@ -72,7 +72,8 @@ def generateTree(n, N):
     
     Parameters
     ----------
-    nodes -- the list of all nodes in the tree
+    n -- our sample size that we wish to simulate
+    N -- the size of the population we wish to simulate
     
     Returns
     -------
@@ -291,4 +292,4 @@ def pi(seqMatrix, L):
     pi = sum((2*j*(n-j))/(n*(n-1)))
     return pi/L
 
-print("pi in sample:", pi(seqMatrix, L))
+#print("pi in sample:", pi(seqMatrix, L))
