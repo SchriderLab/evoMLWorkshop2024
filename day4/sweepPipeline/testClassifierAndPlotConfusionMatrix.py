@@ -13,7 +13,6 @@ for fname in os.listdir(testDir):
         className += "ral"
     cmd="diploSHIC predict clf.json clf.weights.h5 {0} {1} --simData".format(testDir+"/"+fname, predFile)
     os.system(cmd)
-    quit()
     preds[className] = Counter(np.loadtxt(predFile, skiprows=1, dtype=str)[:,0])
 print(preds)
 
